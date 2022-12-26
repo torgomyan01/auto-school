@@ -1,0 +1,13 @@
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content{
+    width: 100%;
+}
+
+

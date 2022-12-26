@@ -1,0 +1,4 @@
+{
+    "esversion": 6,
+    "object-shorthand": ["error", "always", { "avoidQuotes": true }]
+}

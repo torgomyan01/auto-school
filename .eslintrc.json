@@ -1,0 +1,78 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "plugins": ["react", "prettier"],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        // settings that eslint play nice with prettier (see github.com/prettier/eslint-config-prettier)
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": false
+            }
+        ],
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
+        "curly": ["warn", "all"],
+        "no-confusing-arrow": ["warn", { "allowParens": false }],
+        "operator-linebreak": "off", // conflicts with prettier sometimes
+        "no-unused-vars": "off",
+        "no-prototype-builtins": "warn", // todo fix eventually
+        "no-extra-boolean-cast": "warn", // todo fix eventually
+        "no-useless-escape": "warn", // todo fix eventually
+        "no-useless-catch": "warn", // todo fix eventually
+        "object-shorthand": "warn", // todo fix eventually
+        "prefer-const": "warn", // todo fix eventually
+        "prefer-template": "warn", // todo fix eventually
+        "react/react-in-jsx-scope": "warn", // todo fix eventually
+        "react/prop-types": "off", // todo fix eventually
+        "import/prefer-default-export": "off", // todo maybe someday warn
+        // rules we definitely want to use
+        "react/display-name": "off",
+        "import/no-cycle": "off",
+        "react/no-find-dom-node": "warn"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "modules": true,
+            "spread": true,
+            "restParams": true
+        },
+        "sourceType": "module"
+    },
+    "parser": "@typescript-eslint/parser",
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "typescript": {
+                "extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
+            },
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.videoBlock{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.imgBlock{
+    width: 100%;
+    height: 10.1875rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+}
+
+.Icon{
+    position: absolute;
+    right: 0.625rem;
+    bottom: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
+
+.viewed{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.3125rem;
+    background: red;
+}
